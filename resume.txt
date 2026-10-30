@@ -1,0 +1,40 @@
+QA Engineer | ISTQB CTFL | PSM I
+7+ years of QA experience in manual and automated testing across mobile and web products (gaming, adtech). Feature testing, release validation, production issue investigation, E2E automation with Playwright and TypeScript/JavaScript. Close work with developers across the SDLC in Scrum teams.
+
+EXPERIENCE
+
+Moon Active - Automation QA Engineer (promoted from Senior Manual QA Engineer), Nov 2021 - Mar 2026
+Global mobile gaming company. Admin Infrastructure team: quality of 2 complex web applications (Admin Game Control, Support) used by multiple game studios to configure game features, content and operational parameters. Products: Coin Master, Travel Town, Family Island, Zen Match.
+- Reduced release cycle from 3 days to 30 minutes by optimising CI/CD and delivery flow
+- Reduced production defects by 85% through improved requirements clarity and QA processes
+- Increased automated test coverage from 22% to 87%
+- Developed and maintained Playwright + TypeScript E2E tests (UI, API, business logic)
+- Exploratory, manual and automated testing across releases; production build validation and release testing
+- Worked with developers and Product Owner in planning/refinement on edge cases and testability
+- Test cases and suites in TestRail and Testomat.io
+- Used Cursor and GitHub Copilot for test development, refactoring, debugging
+
+LifeStreet - QA Engineer, Oct 2018 - Nov 2021
+Mobile advertising technology company. 3 products: interactive 3rd party playable ads (Candy Crush, Toy Blast, Panda Pop), web advertising platform for campaign management, corporate website.
+- Reduced ad-delivery defects by 25%; improved TestRail coverage to 90%
+- Tested playable ads: user flows, game logic, ad behaviour, SDK integrations, iOS/Android compatibility
+- Functional, regression, smoke, integration and cross-platform testing
+- Tested web ad platform: campaigns, targeting, creatives, configurations
+
+Earlier non-QA experience: Project Manager at 21films (2016-2018), Lead Project Manager at Snigtravel (2016-2024, sponsorship partnerships with Visa, VBet, Danone and others).
+Founder, We Are From Ukraine (2022-present): volunteer fundraising and humanitarian aid, 3M+ UAH raised, coordination of operations and reporting.
+
+SKILLS
+Playwright, test automation, E2E testing, API testing, manual testing, test strategy, test case design, defect investigation, release validation, TypeScript/JavaScript, SQL, CI/CD, Jira, Confluence, traffic analysis (Charles Proxy)
+
+TOOLS
+Postman, Git, Jenkins, TestRail, Testomat.io, Coralogix, Grafana, Kibana, AWS, Snowflake, BigQuery, VS Code, WebStorm; AI tools: GitHub Copilot, Cursor, ChatGPT
+
+CERTIFICATIONS
+ISTQB Certified Tester, PSM I, QA Automation TypeScript, JavaScript advanced, EF SET English Upper Intermediate (B2)
+
+EDUCATION
+Master's degree, Geographic Information Systems and Territory Management, Kyiv National University of Construction and Architecture (2006-2011)
+
+LANGUAGES
+English B2, Ukrainian native

@@ -1,0 +1,34 @@
+{
+  "threshold": 75,
+  "criteria": "QA Automation Engineer / SDET / Senior QA Engineer з упором на E2E-автоматизацію (Playwright, TypeScript/JavaScript). Підходить 5+ років досвіду, мобільний гейминг, adtech, web-адмінки та внутрішні платформи в плюс. Змішані ролі manual + automation теж підходять. Формат: remote (з Польщі/ЄС) або гібрид. Не підходить: стек автоматизації виключно Java/Selenium/C# без TS/JS; повністю офісна робота (onsite, без можливості remote чи гібриду).",
+  "filters": {
+    "titleInclude": [
+      "qa",
+      "quality",
+      "test",
+      "sdet"
+    ],
+    "titleExclude": [
+      "junior",
+      "intern",
+      "trainee",
+      "manager"
+    ],
+    "locationInclude": [
+      "warsaw",
+      "warszawa",
+      "poland",
+      "polska",
+      "remote",
+      "hybrid",
+      "europe",
+      "emea",
+      "anywhere"
+    ]
+  },
+  "dou": {
+    "feedUrls": [
+      "https://jobs.dou.ua/vacancies/feeds/?relocation&category=QA"
+    ]
+  }
+}

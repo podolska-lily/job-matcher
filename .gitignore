@@ -1,0 +1,4 @@
+node_modules/
+.env
+report.html
+.DS_Store

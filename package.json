@@ -1,0 +1,17 @@
+{
+  "name": "job-matcher",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env src/index.js",
+    "report": "node src/report.js",
+    "ci": "node src/index.js"
+  },
+  "engines": {
+    "node": ">=22.5"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "latest",
+    "rss-parser": "^3.13.0"
+  }
+}

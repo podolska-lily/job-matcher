@@ -1,0 +1,51 @@
+name: Job matcher
+
+on:
+  schedule:
+    # 06:00 і 15:00 UTC = 07:00 і 16:00 у Варшаві взимку (влітку на годину пізніше)
+    - cron: '0 6,15 * * *'
+  workflow_dispatch: # кнопка "Run workflow" для ручного запуску
+
+concurrency:
+  group: job-matcher
+  cancel-in-progress: false
+
+permissions:
+  contents: write # щоб зберегти jobs.db назад у репозиторій
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Install
+        run: npm install --no-audit --no-fund
+
+      - name: Run matcher
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: npm run ci
+
+      - name: Save report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: report
+          path: report.html
+          retention-days: 14
+          if-no-files-found: ignore
+
+      - name: Save database
+        run: |
+          git config user.name "job-matcher-bot"
+          git config user.email "job-matcher-bot@users.noreply.github.com"
+          git add jobs.db
+          git diff --cached --quiet || (git commit -m "Update jobs.db" && git push)
