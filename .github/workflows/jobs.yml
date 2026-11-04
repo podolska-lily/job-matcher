@@ -1,10 +1,11 @@
 name: Job matcher
 
 on:
-  schedule:
-    # 06:00 і 15:00 UTC = 07:00 і 16:00 у Варшаві взимку (влітку на годину пізніше)
-    - cron: '0 6,15 * * *'
-  workflow_dispatch: # кнопка "Run workflow" для ручного запуску
+  # Автозапуск вимкнено: бот працює лише за кнопкою Run workflow.
+  # Щоб повернути розклад, розкоментуй наступні два рядки:
+  # schedule:
+  #   - cron: '0 5,15 * * *'  # 06:00 і 16:00 у Варшаві взимку
+  workflow_dispatch:
 
 concurrency:
   group: job-matcher
